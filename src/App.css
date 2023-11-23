@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		font-family: "Inter";
+		@apply bg-[#141414] text-white;
+	}
+
+	header {
+		@apply flex w-full items-center justify-between fixed top-0 z-[999] px-4 py-4 bg-gradient-to-t from-[#141414]/[0.04] to-[#060606]/[0.01] transition-all md:px-12 lg:py-6;
+	}
+}
+
+@layer components {
+	.headerLink {
+		@apply text-sm text-[#ffffff] transition duration-[.4s] hover:text-[#b3b3b3] cursor-pointer;
+	}
+
+	.toggleLink {
+		@apply flex justify-center items-center text-sm text-[#b3b3b3] h-12 w-72 transition duration-[.4s] bg-black/90 hover:bg-black/80 cursor-pointer;
+	}
+
+	.bannerButton {
+		@apply flex items-center gap-x-2 rounded px-5 py-1.5 text-sm font-semibold transition hover:opacity-[.85] md:py-2.5 md:px-8 md:text-xl;
+	}
+
+	.slideArrow {
+		@apply absolute top-0 bottom-0 h-5 w-5 m-auto opacity-0 z-50 cursor-pointer transition hover:scale-125 group-hover:opacity-100;
+	}
+
+	.input {
+		@apply w-full h-14 rounded bg-[#333] px-5 py-3.5 placeholder-[#8c8c8c] outline-none focus:bg-[#454545];
+	}
+}
