@@ -2,7 +2,7 @@ import { baseURL } from "../BaseURL/imageBaseUrl";
 import { useState, useEffect } from "react";
 import { XMarkIcon } from "@heroicons/react/24/solid";
 import { UserAuth } from "../Context/AuthContext";
-import { db } from "../firebase";
+import { db } from "../fireBase";
 import { onSnapshot, doc, updateDoc } from "firebase/firestore";
 
 export const SavedShows = () => {
