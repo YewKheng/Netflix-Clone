@@ -2,7 +2,7 @@ import { baseURL } from "../BaseURL/imageBaseUrl";
 import { useState } from "react";
 import { PlusCircleIcon, CheckCircleIcon } from "@heroicons/react/24/outline";
 import { UserAuth } from "../Context/AuthContext";
-import { db } from "../firebase";
+import { db } from "../fireBase";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
 
 export const Thumbnail = ({ movie }) => {
